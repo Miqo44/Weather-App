@@ -16,6 +16,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.13.6'
+          cache: false  # отключаем кеш, чтобы точно скачать правильную версию
 
       - name: Install dependencies
         run: flutter pub get
@@ -34,6 +35,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.13.6'
+          cache: false
 
       - name: Install dependencies
         run: flutter pub get
